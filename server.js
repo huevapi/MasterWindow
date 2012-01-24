@@ -11,7 +11,8 @@ server = http.createServer(function(reg, res)
 	});
 });
 
-server.listen("localhost", 8080);
+server.listen(8080, "127.0.0.1");
+console.log("server run http://127.0.0.1:8080 --- OK")
 
 var nowjs = require("now");
 var everyone = nowjs.initialize(server);
