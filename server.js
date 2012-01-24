@@ -11,7 +11,7 @@ server = http.createServer(function(reg, res)
 	});
 });
 
-server.listen(8080);
+server.listen("localhost", 8080);
 
 var nowjs = require("now");
 var everyone = nowjs.initialize(server);
